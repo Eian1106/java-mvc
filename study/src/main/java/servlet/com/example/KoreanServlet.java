@@ -1,5 +1,6 @@
 package servlet.com.example;
 
+import jakarta.servlet.FilterChain;
 import jakarta.servlet.ServletConfig;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;
@@ -8,6 +9,7 @@ import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 
 import java.io.IOException;
+import java.nio.charset.StandardCharsets;
 
 @WebServlet(name = "koreanServlet", urlPatterns = "/korean")
 public class KoreanServlet extends HttpServlet {
